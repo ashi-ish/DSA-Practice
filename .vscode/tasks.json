@@ -1,34 +1,64 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "compile",
-      "type": "shell",
-      "command": "/usr/bin/clang++",
-      "args": [
-        "-std=c++17",
-        "-stdlib=libc++",
-        "-o",
-        "${fileBasenameNoExtension}",
-        "${file}"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": false
-      }
-    },
-    {
-      "label": "compile and run",
-      "type": "shell",
-      "command": "/bin/bash",
-      "args": [
-        "-c",
-        "/usr/bin/clang++ -std=c++17 -stdlib=libc++ -o demo demo.cpp && ./demo < input.txt > output.txt"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compile",
+			"type": "shell",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-o",
+				"${fileBasenameNoExtension}",
+				"${file}"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
+		},
+		{
+			"label": "compile and run",
+			"type": "shell",
+			"command": "/bin/bash",
+			"args": [
+				"-c",
+				"/usr/bin/clang++ -std=c++17 -stdlib=libc++ -o demo demo.cpp && ./demo < input.txt > output.txt"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "compile and run balanced_paranthesis",
+			"type": "shell",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-o",
+				"balanced_paranthesis",
+				"balanced_paranthesis.cpp",
+				"&&",
+				"./balanced_paranthesis"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile and run balanced_paranthesis",
+			"type": "shell",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-o",
+				"balanced_paranthesis",
+				"balanced_paranthesis.cpp",
+				"&&",
+				"./balanced_paranthesis"
+			],
+			"group": "build"
+		}
+	]
 }
