@@ -23,8 +23,13 @@ void pattern1(int n)
 
 int main()
 {
-    int n;
-    cin >> n;
-    pattern1(n);
+    int n, t;
+    cin >> t;
+    for (int i = 0; i < t; i++) // checking for different test cases
+    {
+        cin >> n;
+        pattern1(n);
+    }
+
     return 0;
 }
