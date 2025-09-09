@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-void pattern6(int n)
+void pattern8(int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -37,7 +37,7 @@ int main()
     for (int i = 0; i < t; i++) // checking for different test cases
     {
         cin >> n;
-        pattern6(n);
+        pattern8(n);
     }
 
     return 0;
