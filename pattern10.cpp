@@ -27,7 +27,7 @@ void pattern10(int n)
         initialSpaces = initialSpaces + 2;
         cout << endl;
     }
-    initialSpaces = 8;
+    initialSpaces = 2 * n - 2;
     for (int i = 1; i <= n; i++)
     {
         // space
