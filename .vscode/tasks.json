@@ -94,6 +94,21 @@
 				"pattern3.cpp"
 			],
 			"group": "build"
+		},
+		{
+			"label": "compile and run pattern7",
+			"type": "shell",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-o",
+				"pattern7",
+				"pattern7.cpp",
+				"&&",
+				"./pattern7"
+			],
+			"group": "build"
 		}
 	]
 }
